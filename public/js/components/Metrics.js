@@ -1,4 +1,5 @@
 import React from 'react'
+import { Parallax, Background } from 'react-parallax'
 
 const Metrics = () => {
   const style = {
@@ -21,20 +22,27 @@ const Metrics = () => {
 
   return (
     <div style={style}>
-      <div class="row" style={rowStyle}>
-        <div class="col-sm-4 center-text">
-          <h2 style={statStyle}>1mil</h2>
-          <p style={{ fontSize: '19px' }}>ppl</p>
-        </div>
-        <div class="col-sm-4 center-text">
-          <h2 style={statStyle}>5000</h2>
-          <p style={{ fontSize: '19px' }}>companies</p>
-        </div>
-        <div class="col-sm-4 center-text">
-          <h2 style={statStyle}>1</h2>
-          <p style={{ fontSize: '19px' }}>love</p>
-        </div>
+
+    <Parallax strength={300}>
+      <Background>
+        <img alt="parallax" src="../../images/mustache_logo.png" />
+      </Background>
+      <div style={{ height: '400px' }} />
+    </Parallax>
+    <div class="row" style={rowStyle}>
+      <div class="col-sm-4 center-text">
+        <h2 style={statStyle}>1mil</h2>
+        <p style={{ fontSize: '19px' }}>ppl</p>
       </div>
+      <div class="col-sm-4 center-text">
+        <h2 style={statStyle}>5000</h2>
+        <p style={{ fontSize: '19px' }}>companies</p>
+      </div>
+      <div class="col-sm-4 center-text">
+        <h2 style={statStyle}>1</h2>
+        <p style={{ fontSize: '19px' }}>love</p>
+      </div>
+    </div>
     </div>
   )
 }

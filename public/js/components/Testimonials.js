@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonials = () => {
   const style = {
-
+    marginBottom: '500px',
   }
 
   return (

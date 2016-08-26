@@ -9,6 +9,7 @@ const Footer = () => {
     padding: '1rem',
     textAlign: 'center',
     backgroundColor: '#EBF0F5',
+    zIndex: '100',
   }
 
   return (
