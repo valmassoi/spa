@@ -25,7 +25,7 @@ const Metrics = () => {
 
     <Parallax strength={300}>
       <Background>
-        <img alt="parallax" src="../../images/mustache_logo.png" />
+        <img alt="parallax" src="../../../images/mustache_logo.png" />
       </Background>
       <div style={{ height: '400px' }} />
     </Parallax>

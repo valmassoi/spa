@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-import AboutList from '../components/AboutList'
-import AnimationCard from '../components/AnimationCard'
-import CompanyList from '../components/CompanyList'
-import Integrations from '../components/Integrations'
-import JoinUs from '../components/JoinUs'
-import Metrics from '../components/Metrics'
-import Testimonials from '../components/Testimonials'
-import Welcome from '../components/Welcome'
+import AboutList from '../components/home/AboutList'
+import AnimationCard from '../components/home/AnimationCard'
+import CompanyList from '../components/home/CompanyList'
+import Integrations from '../components/home/Integrations'
+import JoinUs from '../components/home/JoinUs'
+import Metrics from '../components/home/Metrics'
+import Testimonials from '../components/home/Testimonials'
+import Welcome from '../components/home/Welcome'
 
 export default class Home extends Component {
 
