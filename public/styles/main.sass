@@ -8,6 +8,9 @@ html
 html *
   font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 
+h1
+  font-weight: 600
+
 p
   font-size: 16px
 
@@ -26,7 +29,21 @@ body
 a
   color: $main-color !important
 
+a:-webkit-any-link
+  text-decoration: none
+
+.nav-pills
+  cursor: pointer
+.nav > li
+  display: inline-block !important
+  float: clear
+
+.nav-pills>li.active>a
+  color: white !important
+  background-color: $main-color
+
 .btn-primary, .btn-primary:hover, .btn-primary:focus
+  outline: none
   position: static
   display: block
   margin-right: auto
@@ -36,7 +53,7 @@ a
   border: 0px solid #b39b20
   border-radius: 94px
   background-color: $accent-color
-  box-shadow: 0 13px 34px 0 rgba(255, 221, 42, .6)
+  box-shadow: 0 10px 20px 0 rgba(255, 221, 42, .6)
   font-family: Lato, sans-serif
   color: #b38c12
   font-weight: 700
@@ -61,3 +78,31 @@ a
 
 .hidden
   display: none !important
+
+// Pricing
+.tiers-container
+  margin-top: 50px
+  max-width: 700px
+  #cost
+    font-size: 50px
+    font-weight: 500
+  #tier
+    font-size: 16px
+    font-weight: 500
+    letter-spacing: 3.5px
+  .fa-usd
+    font-size: 20px
+    font-weight: 500
+
+.tier-container
+  padding-left: 20px
+  background-color: white
+  box-shadow: rgba(0, 0, 0, 0.0980392) 0px 23px 40px 0px
+  box-sizing: border-box
+  color:rgb(41, 41, 41)
+  border-radius: 4px
+  &:nth-child(2)
+    margin-top: -20px
+    background-color: $main-color
+    color: white
+    padding-bottom: 75px

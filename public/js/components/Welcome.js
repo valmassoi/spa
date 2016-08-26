@@ -12,7 +12,7 @@ class Welcome extends Component {
   }
 
   scrollToBottom() {
-    scroll.scrollToBottom()
+    scroll.scrollToBottom({ duration: '2000' })
   }
 
   render() {

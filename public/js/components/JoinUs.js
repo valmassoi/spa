@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const JoinUs = () => {
   const style = {
     margin: '20px auto',
     marginBottom: '100px',
     zIndex: '10',
-    '-webkit-mask-image': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)',
+    'WebkitMaskImage': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)',
     overflow: 'hidden',
     backgroundColor: 'white',
     width: '600px',
@@ -38,7 +39,7 @@ const JoinUs = () => {
           <br />-that one
           <br />-and another one
           <br />
-          <button class="btn btn-primary">Join Us</button>
+          <Link to="/pricing"><button class="btn btn-primary">Join Us</button></Link>
         </div>
       </div>
     </div>

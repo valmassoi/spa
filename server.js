@@ -1,5 +1,6 @@
 const express = require('express')
 const http = require('http')
+const path = require('path')
 // const routes = require('./app/routes/someroute')
 // const mongo = require('mongodb').MongoClient
 const cors = require('cors')
@@ -15,8 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.enable('trust proxy')
 
 app.get('*', (req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' })
-  res.end('404!')
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
 const port = process.env.PORT || 8081
