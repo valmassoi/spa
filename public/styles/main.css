@@ -4,8 +4,9 @@ html {
 
 html * {
   font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  html * p {
-    font-size: 16px; }
+
+p {
+  font-size: 16px; }
 
 *,
 *:before,
@@ -21,6 +22,25 @@ body {
 
 a {
   color: #1674f0 !important; }
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+  position: static;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 18px 60px;
+  float: none;
+  border: 0px solid #b39b20;
+  border-radius: 94px;
+  background-color: #f3e439;
+  box-shadow: 0 13px 34px 0 rgba(255, 221, 42, 0.6);
+  font-family: Lato, sans-serif;
+  color: #b38c12;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s, color 0.5s ease 0s, opacity 900ms, transform 900ms cubic-bezier(0.165, 0.84, 0.44, 1); }
+  .btn-primary:hover, .btn-primary:hover:hover, .btn-primary:focus:hover {
+    background-color: #f3d539; }
 
 .centered {
   margin: 0px auto; }

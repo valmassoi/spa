@@ -2,7 +2,7 @@ import React from 'react'
 
 const CompanyList = () => {
   const style = {
-
+    marginBottom: '700px',
   }
 
   return (

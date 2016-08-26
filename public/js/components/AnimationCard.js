@@ -3,7 +3,7 @@ import React from 'react'
 const AnimationCard = () => {
   const style = {
     position: 'absolute',
-    margin: '20px auto',
+    margin: '100px auto 20px',
     left: '0',
     right: '0',
     zIndex: '10',
