@@ -39,16 +39,14 @@ class Pricing extends Component {
     return (
       <div>
         <h1 class="center-text">PRICING</h1>
-
-          <ul class="nav nav-pills center-text">
-            <li class={billingIsMonthly} onClick={() => this.setBilling('monthly')}>
-              <a>MONTHLY</a>
-            </li>
-            <li class={billingIsAnnually} onClick={() => this.setBilling('annually')}>
-              <a>ANNUALLY</a>
-            </li>
-          </ul>
-
+        <ul class="nav nav-pills" id="billing">
+          <li class={billingIsMonthly} onClick={() => this.setBilling('monthly')}>
+            <a>MONTHLY</a>
+          </li>
+          <li class={billingIsAnnually} onClick={() => this.setBilling('annually')}>
+            <a>ANNUALLY</a>
+          </li>
+        </ul>
         <div class="row tiers-container centered">
         {tiers.map((tier, i) => {
           return (
@@ -56,7 +54,9 @@ class Pricing extends Component {
               <h3 id="tier" class="center-text">{tier.type.toUpperCase()}</h3>
               <div class="center-text">
                 <i class="fa fa-usd" aria-hidden="true"></i>
-                <span id="cost">{billingIsAnnually ? Math.round(tier.cost) : Math.round(tier.cost * 1.2)}</span>/mo
+                <span id="cost">
+                  {billingIsAnnually ? Math.round(tier.cost) : Math.round(tier.cost * 1.2)}
+                </span>/mo
               </div>
               <p class="center-text">{billingIsAnnually ? '(billed annually)' : ''}</p>
               {tier.features.map((feature, j) => {
@@ -66,6 +66,7 @@ class Pricing extends Component {
                   </p>
                 )
               })}
+              <button class="btn" id="free-trial">Free Trial</button>
             </div>
           )
         })}
