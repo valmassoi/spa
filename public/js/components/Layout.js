@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 // import { Link } from 'react-router'
 
 import Footer from './Footer'
 import Nav from './Nav'
 
-export default class Layout extends Component {
+class Layout extends Component {
 
   render() {
     const { location } = this.props
@@ -17,3 +17,10 @@ export default class Layout extends Component {
     )
   }
 }
+
+Layout.propTypes = {
+  location: PropTypes.object.isRequired,
+  children: PropTypes.element.isRequired,
+}
+
+export default Layout

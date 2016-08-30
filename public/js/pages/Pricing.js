@@ -27,12 +27,12 @@ class Pricing extends Component {
       {
         type: 'better',
         cost: 50,
-        features: ['feat1', 'feat2', 'feat3'],
+        features: ['feat1', 'feat2', 'feat3', 'feat4', 'feat5'],
       },
       {
         type: 'best',
         cost: 75,
-        features: ['feat1', 'feat2', 'feat3', 'feat4'],
+        features: ['better feats', 'feat6', 'feat7'],
       },
     ]
 

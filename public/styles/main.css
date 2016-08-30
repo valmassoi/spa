@@ -29,6 +29,9 @@ a {
 a:-webkit-any-link {
   text-decoration: none; }
 
+.kid-page {
+  padding: 0px 50px; }
+
 .nav-pills#billing {
   cursor: pointer;
   margin-top: 25px;
@@ -101,8 +104,7 @@ a:-webkit-any-link {
   .tier-container:nth-child(2) {
     margin-top: -20px;
     background-color: #1674f0;
-    color: white;
-    padding-bottom: 75px; }
+    color: white; }
 
 .btn#free-trial {
   color: #1674f0;
@@ -119,6 +121,7 @@ a:-webkit-any-link {
 
 .form-container {
   margin: 0 auto;
+  padding: 20px;
   max-width: 400px;
   display: block;
   margin-bottom: 3rem;
