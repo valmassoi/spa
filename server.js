@@ -5,6 +5,7 @@ const path = require('path')
 // const mongo = require('mongodb').MongoClient
 const cors = require('cors')
 const bodyParser = require('body-parser')
+const favicon = require('serve-favicon')
 
 const app = express()
 
@@ -14,6 +15,7 @@ app.use(express.static(`${__dirname}/public/`))
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.enable('trust proxy')
+app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico')))
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))

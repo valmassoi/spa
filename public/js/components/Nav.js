@@ -48,9 +48,9 @@ export default class Nav extends Component {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">
+            <Link to="/" class="navbar-brand" onClick={this.setCollapsed.bind(this)}>
               <img src="../images/mustache_logo.png" alt="mustache logo" width="100" />
-            </a>
+            </Link>
           </div>
           <div class={`navbar-collapse ${navClass}`}>
             <ul class="nav navbar-nav navbar-right">
