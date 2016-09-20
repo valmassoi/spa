@@ -1,22 +1,15 @@
-import React, { Component, PropTypes } from 'react'
+import React, { PropTypes } from 'react'
 // import { Link } from 'react-router'
 
 import Footer from './Footer'
 import Nav from './Nav'
 
-class Layout extends Component {
-
-  render() {
-    const { location } = this.props
-    return (
-      <div>
-        <Nav location={location} />
-        {this.props.children}
-        <Footer />
-      </div>
-    )
-  }
-}
+const Layout = ({ location, children }) =>
+  <div>
+    <Nav location={location} />
+    {children}
+    <Footer />
+  </div>
 
 Layout.propTypes = {
   location: PropTypes.object.isRequired,
