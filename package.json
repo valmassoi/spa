@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./server.js",
     "dev": "webpack-dev-server --content-base public --inline --hot --history-api-fallback",
-    "deploy": "NODE_ENV=production webpack"
+    "deploy": "NODE_ENV=production webpack",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -46,7 +48,8 @@
     "redux-form": "^5.2.5",
     "redux-promise": "^0.5.3",
     "serve-favicon": "^2.3.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "snyk": "^1.83.0"
   },
   "engines": {
     "node": "6.5.0"
@@ -72,5 +75,6 @@
     "sass-loader": "^3.2.0",
     "webpack-dashboard": "0.0.1",
     "webpack-dev-middleware": "^1.6.1"
-  }
+  },
+  "snyk": true
 }
